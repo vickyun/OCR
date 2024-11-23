@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Translate image to text</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+<h1>Translate your Image to Text</h1>
+<p>Upload your image with any text in english to retrieve the characters:</p>
+<form action="/ocr" method="post" enctype="multipart/form-data">
+    <input type="file" name="image"/>
+    <input type="submit" value="Upload Image"/>
+</form>
+{% if image_path %}
+<img id="uploaded-image" src="{{ image_path }}" alt="Uploaded Image"/>
+{% endif %}
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+{% if text %}
+<p>Image Text>: {{ text }}</p>
+{% endif %}
+
+
+</body>
+</html>

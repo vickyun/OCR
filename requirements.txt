@@ -1,0 +1,6 @@
+fastapi==0.115.2
+uvicorn==0.31.1
+python-multipart==0.0.12
+aiofiles==24.1.0
+pytesseract==0.3.13
+isort==5.13.2
