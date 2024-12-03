@@ -4,3 +4,7 @@ python-multipart==0.0.12
 aiofiles==24.1.0
 pytesseract==0.3.13
 isort==5.13.2
+pytest==8.3.3
+pandas==2.2.0
+pyarrow==18.1.0
+numpy==1.26.4
